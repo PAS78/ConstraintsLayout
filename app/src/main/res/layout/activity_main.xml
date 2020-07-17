@@ -10,34 +10,29 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="h,3:2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pizzeria" />
+        android:layout_width="253dp"
+        android:layout_height="473dp"
+        app:srcCompat="@drawable/pizzeria"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/pizza"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/pizza" />
+        app:srcCompat="@drawable/pizza"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/pizzaName"
         style="@android:style/Widget.Material.TextView"
-        android:layout_width="0dp"
+        android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:text="пицца Пепперони"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        app:layout_constraintBottom_toBottomOf="@+id/pizza"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/pizza"
-        app:layout_constraintTop_toTopOf="@+id/pizza"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="340dp"
         tools:text="пицца Пепперони" />
 
     <Button
@@ -45,33 +40,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="25 см"
-        app:layout_constraintEnd_toStartOf="@+id/button30"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pizza" />
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="454dp" />
 
     <Button
         android:id="@+id/button30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="30 см"
-        app:layout_constraintBottom_toBottomOf="@+id/button25"
-        app:layout_constraintEnd_toStartOf="@+id/button35"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button25"
-        app:layout_constraintTop_toTopOf="@+id/button25"
-        app:layout_constraintVertical_bias="0.0" />
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="536dp" />
 
     <Button
         android:id="@+id/button35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="35 см"
-        app:layout_constraintBottom_toBottomOf="@+id/button30"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button30"
-        app:layout_constraintTop_toTopOf="@+id/button30" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="489dp" />
 
     <TextView
         android:id="@+id/ingridients"
@@ -79,9 +65,8 @@
         android:layout_height="wrap_content"
         android:text="Ингридиенты:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/cal"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/button25" />
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="603dp" />
 
     <TextView
         android:id="@+id/cal"
@@ -89,49 +74,27 @@
         android:layout_height="wrap_content"
         android:text="Калорийность:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/ingridients"
-        app:layout_constraintVertical_bias="0.675" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="38dp" />
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="603dp" />
 
     <TextView
         android:id="@+id/ingridientsVal"
-        android:layout_width="0dp"
+        android:layout_width="233dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="сыр моцарелла, копченая колбаса"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="@+id/ingridients"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/barrier"
-        app:layout_constraintTop_toTopOf="@+id/ingridients"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="674dp"
         tools:text="сыр моцарелла, копченая колбаса" />
 
     <TextView
         android:id="@+id/CalVal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="385 Ккал"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="@+id/cal"
-        app:layout_constraintStart_toStartOf="@id/barrier"
-        app:layout_constraintTop_toTopOf="@+id/cal"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="706dp"
         tools:text="385 Ккал" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="end"
-        app:constraint_referenced_ids="ingridients,cal"
-        tools:layout_editor_absoluteX="411dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
