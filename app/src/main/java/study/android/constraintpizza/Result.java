@@ -2,6 +2,7 @@ package study.android.constraintpizza;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AnticipateOvershootInterpolator;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class Result extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.s1);
         layout = findViewById(R.id.root);
         findViewById(R.id.pizza).setOnClickListener(new View.OnClickListener() {
@@ -31,7 +33,7 @@ public class Result extends AppCompatActivity {
     void animate(int id){
         ConstraintSet cs = new ConstraintSet();
         Transition transition = new AutoTransition();
-        transition.setDuration(1000);
+        transition.setDuration(700);
         transition.setInterpolator(new AnticipateOvershootInterpolator());
         cs.clone(this, id);
         TransitionManager.beginDelayedTransition(layout, transition);
