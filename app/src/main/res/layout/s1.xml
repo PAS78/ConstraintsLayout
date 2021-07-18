@@ -11,11 +11,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,8:3"
+        android:background="#fdc860"
+        android:maxHeight="200dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        android:scaleX="1.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pizza_logo" />
@@ -80,7 +82,7 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linearLayoutCompat"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +93,7 @@
             android:id="@+id/card"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_margin="16dp"
+            android:layout_margin="12dp"
             app:cardCornerRadius="16dp">
 
             <ImageView
@@ -103,7 +105,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_margin="16dp"
+            android:layout_margin="12dp"
             app:cardCornerRadius="16dp">
 
             <ImageView
@@ -115,7 +117,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_margin="16dp"
+            android:layout_margin="12dp"
             app:cardCornerRadius="16dp">
 
             <ImageView
@@ -127,7 +129,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_margin="16dp"
+            android:layout_margin="12dp"
             app:cardCornerRadius="16dp">
 
             <ImageView
@@ -155,9 +157,9 @@
         android:layout_width="170dp"
         android:layout_height="0dp"
         android:gravity="center"
+        android:src="@drawable/pizza_ic"
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
-        android:src="@drawable/pizza_ic"
         app:layout_constraintBottom_toBottomOf="@+id/large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/medium"
@@ -199,13 +201,13 @@
         android:id="@+id/btn"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginBottom="20dp"
         android:backgroundTint="#fdc860"
         android:fontFamily="sans-serif-black"
         android:text="Заказать"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier"
