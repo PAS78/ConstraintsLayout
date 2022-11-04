@@ -1,21 +1,15 @@
 package study.android.constraintpizza;
 
+import android.os.Bundle;
+import android.view.View;
+import android.view.animation.AnticipateOvershootInterpolator;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.transition.AutoTransition;
 import androidx.transition.Transition;
 import androidx.transition.TransitionManager;
-
-import android.graphics.Interpolator;
-import android.os.Bundle;
-import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AnticipateInterpolator;
-import android.view.animation.AnticipateOvershootInterpolator;
-import android.view.animation.BounceInterpolator;
-import android.view.animation.CycleInterpolator;
-import android.view.animation.OvershootInterpolator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    void animate(int id){
+    void animate(int id) {
         ConstraintSet constraintSet = new ConstraintSet();
         Transition transition = new AutoTransition();
-        transition.setDuration(777);
+        transition.setDuration(1200);
         transition.setInterpolator(new AnticipateOvershootInterpolator());
 //        transition.setInterpolator(new BounceInterpolator());
 //        transition.setInterpolator(new CycleInterpolator(5));
